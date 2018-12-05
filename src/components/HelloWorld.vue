@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h0><font size="+7">NQD Games</font></h0>
+    <h3><font size="+7">NQD Games</font></h3>
     <h1>{{ msg }}</h1>
     <h2><font size="+7">Jeux :</font> </h2>
 
@@ -22,16 +22,7 @@
           href="http://localhost:8080/#/p5Pong2"
           target="_blank"
         >
-          Pong-game(1)
-        </a>
-      </li>
-      <li>
-        <a
-          style="text-decoration:none"
-          href="http://localhost:8080/#/backgroundtest"
-          target="_blank"
-        >
-          backgroundtest
+          Snake
         </a>
       </li>
     </ul>
@@ -45,15 +36,16 @@ export default {
   data () {
     return {
       msg: ''
-    }
+    }.hello
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+  h1, h2, h3 {
   font-weight: normal;
+  color: #FA0303
 }
 ul {
   list-style-type: none;
@@ -68,7 +60,6 @@ a {
 }
 .hello{
     backgroud-color: white;
-    background-image: url("../assets/Fond.png") ;
 }
 ul {
  padding:0;
@@ -76,7 +67,7 @@ ul {
  list-style-type:none;
  }
 li {
- margin-left:200px;
+ margin-left:100px;
  float:left;
  }
 ul li a {
