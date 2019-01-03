@@ -3,7 +3,6 @@
     <h3><font size="+7">NQD Games</font></h3>
     <h1>{{ msg }}</h1>
     <h2><font size="+7">Jeux :</font> </h2>
-
     <ul>
       <li>
         <a
@@ -19,7 +18,7 @@
       <li>
         <a
           style="text-decoration:none"
-          href="http://localhost:8080/#/p5Pong2"
+          href="http://localhost:8080/#/snake"
           target="_blank"
         >
           Snake
@@ -43,9 +42,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello {
+  border: 1px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: blue;
+  text-align: center;
+  padding: 10px;
+}
   h1, h2, h3 {
   font-weight: normal;
-  color: #FA0303
+  font-family: Verdana;
+  text-align: center;
+  color: #FA0303;
+  border: 3px solid red;
 }
 ul {
   list-style-type: none;
@@ -58,17 +69,13 @@ li {
 a {
   color: #0000FF;
 }
-.hello{
-    backgroud-color: white;
-}
 ul {
  padding:0;
  margin:0;
  list-style-type:none;
  }
 li {
- margin-left:100px;
- float:left;
+ text-align: center;
  }
 ul li a {
  display:block;
@@ -77,13 +84,12 @@ ul li a {
  background-color:#FF0000;
  color:black;
  text-decoration:none;
- text-align:center;
  padding:5px;
  border:2px solid;
  border-color:#DCDCDC #696969 #696969 #DCDCDC;
  }
 ul li a:hover {
- background-color:#800080;
+ background-color: yellow;
  border-color:#696969 #DCDCDC #DCDCDC #696969;
  }
 </style>
